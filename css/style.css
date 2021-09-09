@@ -1,0 +1,3221 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #253858;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #253858;
+	/* padding: 2px; */
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #42526E;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+body{
+    position: relative;
+    overflow-y: scroll;
+}
+body div.scroller{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fbaf32;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+}
+body div.scroller div.upcontainer{
+    width: 20px;
+    position: relative;
+    top: 9px;
+    left: 9px;
+}
+body div.scroller div.upcontainer img{
+    width: 100%;
+    display: block;
+}
+#home{
+    background: url("../images/carousel-2.jpg") rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+#home header{
+   padding: 40px 40px;
+}
+#home header section.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home header h1{
+    width: 240px;
+}
+#home header h1 a{
+    width: 100%;
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #f6af42;
+}
+#home header h1 a span{
+    font-weight: 700;
+    color: #719a29;
+}
+#home header h1 a span:hover{
+    color: #f6af42;
+}
+#home header nav.right{
+    
+}
+#home header nav.right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home header nav.right ul li{
+    margin-right: 20px;
+}
+#home header nav.right ul li:last-child{
+    margin-right: 0;
+}
+#home header nav.right ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+#home header nav.right ul li a:hover{
+    color: #f6af42;
+}
+#home header nav.right ul li div.dropdown{
+
+}
+#home header nav.right ul li div.dropdown:hover .dropdown-content a{
+    display: block;
+}
+#home header nav.right ul li div.dropdown a.button{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+#home header nav.right ul li div.dropdown a.button:hover{
+    color: #f6af42;
+}
+#home header nav.right ul li div.dropdown div.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+#home header nav.right ul li div.dropdown div.dropdown-content a{
+    padding: 12px 34px;
+    background: #fff;
+    color: #000;
+    display: none;
+}
+#home header nav.right ul li a img{
+    filter: brightness(2.5);
+    margin-left: 5px;
+}
+#home header nav.right ul li a img:hover{
+    
+}
+#home section.spotlight{
+    padding-bottom: 234px;
+}
+#home section.spotlight section.wrapper{
+    
+}
+#home section.spotlight div.spot{
+    text-align: center;
+    padding-top: 170px;
+}
+#home section.spotlight div.spot h3{
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    color: #fff;
+}
+#home section.spotlight div.spot h3 span{
+    font-size: 58px;
+    font-weight: 700;
+    color: #f6af42;
+}
+#home section.spotlight div.spot p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 42px;
+    color: #fff;
+}
+#home section.spotlight div.spot ul{
+    display: flex;
+    justify-content: center;
+}
+#home section.spotlight div.spot ul li{
+    margin-right: 20px;
+}
+#home section.spotlight div.spot ul li:last-child{
+    margin-right: 0;
+}
+#home section.spotlight div.spot ul li div.one{
+    
+}
+#home section.spotlight div.spot ul li div.one a.button{
+    padding: 20px 20px;
+    background: #f6af42;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+#home section.spotlight div.spot ul li div.one a.button:hover{
+    border: 1px solid #f6af42;
+    background: none;
+    border-radius: 10px;
+    color: #f6af42;
+    transition-duration: 1s;
+}
+#home section.spotlight div.spot ul li div.two{
+    
+}
+#home section.spotlight div.spot ul li div.two a.button{
+    padding: 20px 20px;
+    background: #719a29;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+#home section.spotlight div.spot ul li div.two a.button:hover{
+    border: 1px solid #719a29;
+    background: none;
+    border-radius: 10px;
+    color: #719a29;
+    transition-duration: 1s;
+} /* ( #home ) */
+#home-about{
+    background: url("../images/page-header.jpg") rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+#home-about header{
+   padding: 40px 40px;
+}
+#home-about header section.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home-about header h1{
+    width: 240px;
+}
+#home-about header h1 a{
+    width: 100%;
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #f6af42;
+}
+#home-about header h1 a span{
+    font-weight: 700;
+    color: #719a29;
+}
+#home-about header h1 a span:hover{
+    color: #f6af42;
+}
+#home-about header nav.right{
+    
+}
+#home-about header nav.right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home-about header nav.right ul li{
+    margin-right: 20px;
+}
+#home-about header nav.right ul li:last-child{
+    margin-right: 0;
+}
+#home-about header nav.right ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+#home-about header nav.right ul li a:hover{
+    color: #f6af42;
+}
+#home-about header nav.right ul li div.dropdown{
+
+}
+#home-about header nav.right ul li div.dropdown:hover .dropdown-content a{
+    display: block;
+}
+#home-about header nav.right ul li div.dropdown a.button{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+#home header nav.right ul li div.dropdown a.button:hover{
+    color: #f6af42;
+}
+#home-about header nav.right ul li div.dropdown div.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+#home-about header nav.right ul li div.dropdown div.dropdown-content a{
+    padding: 12px 34px;
+    background: #fff;
+    color: #000;
+    display: none;
+}
+#home-about header nav.right ul li a img{
+    filter: brightness(2.5);
+    margin-left: 5px;
+}
+#home-about header nav.right ul li a img:hover{
+    
+}
+#home-about section.spotlight{
+    padding-bottom: 54px;
+}
+#home-about section.spotlight section.wrapper{
+    
+}
+#home-about section.spotlight div.spot{
+    text-align: center;
+    padding-top: 54px;
+}
+#home-about section.spotlight div.spot h3{
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    color: #fbaf32;
+    text-transform: capitalize;
+}
+#home-about section.spotlight div.spot span{
+    font-size: 22px;
+    font-weight: 700;
+    color: #f6af42;
+    margin: 0 4px;
+}
+#home-about section.spotlight div.spot p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 42px;
+    color: #fff;
+    text-transform: uppercase;
+} /* ( #home-about ) */
+#booking{
+    background: #f5f5f5;
+}
+#booking section.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#booking div.left{
+    width: 80%;
+    padding: 140px 20px;
+}
+#booking div.left span{
+    color: #719a29;
+    font-size: 24px;
+    font-weight: 500;
+}
+#booking div.left h3{
+    text-transform: capitalize;
+    font-size: 42px;
+    font-weight: 700;
+    color: #454545;
+    margin-top: 10px;
+}
+#booking div.left p{
+    font-size: 18px;
+    font-weight: 550;
+    color: #8d8d8d;
+    margin-top: 20px;
+}
+#booking div.right{
+    width: 62%;
+    background: #f6af42;
+}
+#booking div.right div.formbox{
+    color: #fff;
+    padding: 92px 40px;
+}
+#booking div.right div.formbox form.fbook{
+    display: flex;
+    flex-direction: column;
+}
+#booking div.right div.formbox form.fbook div.form-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#booking div.right div.formbox form.fbook div.form-icon input{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+}
+#booking div.right div.formbox form.fbook div.form-icon div.form-icon-con{
+    width: 20px;
+    margin-right: 20px;
+}
+#booking div.right div.formbox form.fbook div.form-icon div.form-icon-con img{
+    width: 100%;
+    display: bloc
+}
+#booking div.right div.formbox form.fbook div.form-icon input::placeholder{
+    color: #fff;
+}
+#booking div.right div.formbox form.fbook input::placeholder{
+    color: #fff;
+}
+#booking div.right div.formbox form.fbook select{
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+#booking div.right div.formbox form.fbook select option{
+
+}
+#booking div.right div.formbox form.fbook a.button{
+    padding: 15px 30px;
+    background: #fff;
+    border-radius: 10px;
+    color: #f6af42;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+}
+#booking div.right div.formbox form.fbook a.button:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background: #f6af42;
+    transition-duration: .5s;
+} /* ( #booking ) */
+#about{
+    padding: 80px 0;
+}
+#about section.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#about div.left{
+    margin-right: 40px;
+}
+#about div.left div.img-container{
+   width: 578px;
+}
+
+#about div.circle{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: relative;
+    left: 465px;
+    top: 437px;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+#about div.circle::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #fbaf32;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+#about div.circle::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #fbaf32;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+#about div.circle img{
+    z-index: 3;
+}
+@keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+#about div.circle div.image-play{
+    width: 35px;
+    cursor: pointer;
+}
+#about div.circle div.image-play img{
+    width: 100%;
+    display: block;
+    filter: invert(100%);
+    position: relative;
+    left: 42px;
+    top: 30px;   
+}
+#about div.left div.img-container img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+#about div.right{
+    padding: 140px 20px;
+}
+#about div.right span{
+    color: #719a29;
+    font-size: 24px;
+    font-weight: 500;
+}
+#about div.right h3{
+    font-size: 50px;
+    font-weight: 700;
+    color: #454545;
+    margin: 10px 0 20px;
+}
+#about div.right p{
+    font-size: 18px;
+    font-weight: 550;
+    color: #8d8d8d;
+    margin-bottom: 30px;
+}
+#about div.right a.button{
+    padding: 16px 26px;
+    color: #fff;
+    background: #f6af42;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#about div.right a.button:hover{
+    padding: 16px 26px;
+    background: #fff;
+    color: #f6af42;
+    border: 1px solid #f6af42;
+    transition-duration: .5s;
+} /* ( #about ) */
+#features{
+    padding: 60px 0 80px;
+}
+#features section.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#features div.left{
+}
+#features div.left span{
+    color: #719a29;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#features div.left h3{
+    text-transform: capitalize;
+    font-size: 42px;
+    font-weight: 700;
+    color: #454545;
+    margin: 10px 0 30px 0;
+}
+#features div.left div.img-collection{
+    display: flex;
+    flex-wrap: wrap;
+}
+#features div.left div.img-collection div.imgcon1{
+   width: 48%;
+}
+#features div.left div.img-collection div.imgcon1 img{
+    width: 100%;
+    display: block;
+    border-top-left-radius: 20px;
+}
+#features div.left div.img-collection div.imgcon2{
+    width: 48%;
+}
+#features div.left div.img-collection div.imgcon2 img{
+    width: 100%;
+    display: block;
+    border-top-right-radius: 20px;
+}
+#features div.left div.img-collection div.imgcon3{
+    width: 48%;
+}
+#features div.left div.img-collection div.imgcon3 img{
+    width: 100%;
+    display: block;
+}
+#features div.left div.img-collection div.imgcon4{
+    width: 48%;
+}
+#features div.left div.img-collection div.imgcon4 img{
+    width: 100%;
+    display: block;
+}
+#features div.left p{
+    font-size: 18px;
+    font-weight: 550;
+    color: #8d8d8d;
+    margin: 34px 0 42px;
+}
+#features div.left a.button{
+    padding: 20px 30px;
+    background: #f6af42;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+}
+#features div.left a.button:hover{
+    background: #fff;
+    color: #f6af42;
+    border: 1px solid #f6af42;
+    transition: .5s;
+} /* ( #feature > div.left ) */
+#features div.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 40px;
+}
+#features div.right div.ftr1{
+    width: 90%;
+    margin-bottom: 20px;
+}
+#features div.right div.ftr div.round{
+    width: 50px;
+    height: 50px;
+    background: #f6af42;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 20px;
+}
+#features div.right div.ftr div.round img{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 14px;
+    right: 12px;
+}
+#features div.right div.ftr h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: #454545;
+    margin: 16px 0 5px;
+}
+#features div.right div.ftr p{
+    font-size: 16px;
+    font-weight: 550;
+    color: #8d8d8d;
+}
+#features div.right div.ftr{
+    width: 90%;
+    margin-bottom: 20px;
+} /* ( #features ) */
+#products{
+    padding: 120px 0;
+    background: #f5f5f5;
+}
+#products section.wrapper{
+
+}
+#products ul{
+    display: flex;
+    justify-content: space-between;
+}
+#products ul li{
+
+}
+#products ul li div.product{
+    width: 96%;
+    background: #fff;
+    height: 356px;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 29px 0px rgb(71 71 71 / 14%);
+}
+#products ul li div.product:hover{
+    box-shadow: none;
+}
+#products ul li div.product div.img-con{
+    width: 80px;
+    display: inline-block;
+    margin-top: 20px;
+}
+#products ul li div.product div.img-con img{
+    width: 100%;
+    display: block;
+}
+#products ul li div.product h5{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    color: #454545;
+}
+#products ul li div.product p{
+    font-size: 18px;
+    font-weight: 550;
+    color: #8d8d8d;
+    margin-bottom: 20px;
+}
+#products ul li div.product a{
+    color: #f6af42;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+#products ul li div.product a::after{
+    content: "";
+    border-bottom: 2px solid #f6af42;
+    position: absolute;
+    width: 50px;
+    right: 0;
+    left: 0;
+    height: 25px;
+    margin: 0 auto;
+}
+#products ul li div.product a:hover::after{
+    width: 100%;
+    border-color: #719a29;
+    transition: .5s;
+}
+#products ul li div.product a:hover{
+    color: #719a29;
+}/* ( #products ) */
+#menu{
+    padding: 120px 0;
+}
+#menu section.wrapper{
+
+}
+#menu div.top{
+    text-align: center;
+}
+#menu div.top span{
+    color: #719a29;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#menu div.top h4{
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #454545;
+    margin: 20px 0 48px;
+}
+#menu div.top ul{
+    display: flex;
+    justify-content: center;
+}
+#menu div.top ul li{
+    margin-right: 12px
+}
+#menu div.top ul li:last-child{
+    margin-right: 0;
+}
+#menu div.top ul li div.burger{
+    
+}
+#menu div.top ul li div.burger a.button{
+    padding: 10px 20px;
+    background: #719a29;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 550;
+}
+#menu div.top ul li div.snacks{
+    
+}
+#menu div.top ul li div.snacks a.button{
+    padding: 10px 20px;
+    background: #f6af42;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 550;
+}
+#menu div.top ul li div.snacks a.button:hover{
+    background: #719a29;
+}
+#menu div.top ul li div.beverages{
+    
+}
+#menu div.top ul li div.beverages a.button{
+    padding: 10px 20px;
+    background: #f6af42;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 550;
+}
+#menu div.top ul li div.beverages a.button:hover{
+    background: #719a29;
+} /* ( #menu > div.top ) */
+#menu div.bottom{
+    padding-top: 40px;
+    display: flex;
+}
+#menu div.bottom div.left{
+
+}
+#menu div.bottom div.left div.item{
+    margin-bottom: 20px;
+}
+#menu div.bottom div.left div.item ul{
+    display: flex;
+    align-items: center;
+}
+#menu div.bottom div.left div.item ul li{
+    margin-right: 22px;
+}
+#menu div.bottom div.left div.item ul li:last-child{
+    margin-bottom: 4%;
+}
+#menu div.bottom div.left div.item ul li div.imagecon{
+    width: 100px;
+}
+#menu div.bottom div.left div.item ul li div.imagecon img{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+#menu div.bottom div.left div.item ul li div.content{
+
+}
+#menu div.bottom div.left div.item ul li div.content ul{
+    display: flex;
+}
+#menu div.bottom div.left div.item ul li div.content ul li{
+    
+}
+#menu div.bottom div.left div.item ul li div.content ul li h6{
+    color: #454545;
+    font-size: 22px;
+    font-weight: 700;
+}
+#menu div.bottom div.left div.item ul li div.content ul li hr.line{
+    border-bottom: 2px dotted #989898;
+	margin: 26px 56% 0 0;
+}
+/*********************/
+#menu div.bottom div.left div.item ul li h6{
+    position: relative;
+    color: #454545;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#menu div.bottom div.left div.item ul li h6::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-top: 2px dotted #a0a0a0;
+    z-index: -1;
+    left: 0;
+    top: 13px;
+}
+#menu div.bottom div.left div.item ul li h6 span{
+    background-color: #fff;
+    color: #454545;
+}
+#menu div.bottom div.left div.item ul li p{
+    color: #8d8d8d;
+    font-size: 16px;
+    font-weight: 250;
+}
+#menu div.bottom div.left div.item ul li span{
+    color: #f6af42;
+    font-size: 22px;
+    font-weight: 600;
+}
+#menu div.right{
+}
+#menu div.right div.image-container{
+    width: 85%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#menu div.right div.image-container img{
+    width: 100%;
+    display: block;
+} /* ( #menu ) */
+#team{
+    padding: 120px 0;
+}
+#team section.wrapper{
+
+}
+#team div.top{
+    text-align: center;
+}
+#team div.top span{
+    font-size: 24px;
+    font-weight: 600;
+    color: #719a29;
+}
+#team div.top h4{
+    color: #454545;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 10px 0 36px;
+}
+#team div.bottom{
+    text-align: center;
+}
+#team div.bottom ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#team div.bottom ul li{
+    margin-right: 24px;
+}
+#team div.bottom ul li:last-child{
+    margin-right: 0;
+}
+#team div.bottom ul li{
+    width: 20%;
+}
+#team div.bottom ul li div.chef{
+    border: 0.5px solid #C0CCDA;
+    padding: 0px 0 30px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#team div.bottom ul li div.chef div.img-shef{
+    position: relative;
+}
+#team div.bottom ul li div.chef div.img-shef img{
+    width: 100%;
+    display: block;
+}
+#team div.bottom ul li div.chef h5{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #454545;
+}
+#team div.bottom ul li div.chef span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #8d8d8d;
+}
+div.img-shef div.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+div.img-shef div.overlay ul li{
+    margin-top: 100px;
+    opacity: 0;
+    transition: 1s;
+    margin-right: 10px;
+}
+div.img-shef div.overlay ul li div.circle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6af42;
+}
+div.img-shef div.overlay ul li div.circle div.icon-container{
+    width: 20px;
+    position: relative;
+}
+div.img-shef:hover div.overlay{
+    background: rgba(256,256,256,0.6);
+}
+div.img-shef:hover div.overlay ul li:first-child{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0s;
+}
+div.img-shef:hover div.overlay ul li:nth-child(2){
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .1s;
+}
+div.img-shef:hover div.overlay ul li:nth-child(3){
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .15s;
+}
+div.img-shef:hover div.overlay ul li:last-child{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+
+#client{
+    padding: 120px 0;
+    background: #f5f5f5;
+}
+#client section.wrapper{
+
+}
+#client ul{
+    display: flex;
+    justify-content: center;
+}
+#client ul li{
+    margin-right: 20px;
+}
+#client ul li:last-child{
+    margin-right: 20px;
+}
+#client ul li div.details{
+    width: 96%;
+    background: #fff;
+    height: 356px;
+    padding: 40px 24px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 29px 0px rgb(71 71 71 / 14%);
+}
+#client ul li div.details div.client-image{
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+#client ul li div.details div.client-image img{
+    width: 100%;
+    display: block;
+}
+#client ul li div.details p{
+    font-size: 18px;
+    font-weight: 550;
+    color: #989898;
+}
+#client ul li div.details h5{
+    font-size: 26px;
+    font-weight: 700;
+    color: #454545;
+    margin: 10px 0;
+}
+#client ul li div.details span{
+    font-size: 18px;
+    font-weight: 550;
+    color: #989898;
+}
+#client div.slider{
+    padding-top: 20px;
+}
+#client div.slider ul{
+    display: flex;
+    justify-content: center;
+}
+#client div.slider ul li{
+    
+}
+#client div.slider ul li div.next{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f6af42;
+}
+#client div.slider ul li div.next:hover{
+    background: #719a29;
+    cursor: pointer;
+} /* ( #client ) */
+#contact-us{
+    padding: 80px;
+}
+#contact-us section.wrapper{
+
+}
+#contact-us div.top{
+    text-align: center;
+}
+#contact-us div.top span{
+    font-size: 22px;
+    font-weight: 500;
+    color: #719a29;
+    text-transform: capitalize;
+}
+#contact-us div.top h4{
+    color: #454545;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 10px 0 36px;
+    text-transform: capitalize;
+}
+#contact-us div.bottom{
+    background: #f5f5f5;
+    padding: 44px 30px;
+}
+#contact-us div.bottom ul{
+    display: flex;
+    justify-content: space-between;
+}
+#contact-us div.bottom ul li{
+}
+#contact-us div.bottom ul li{
+}
+#contact-us div.bottom ul li div.item{
+    
+}
+#contact-us div.bottom ul li div.item ul{
+}
+#contact-us div.bottom ul li div.item ul li{
+    margin-right: 15px;
+}
+#contact-us div.bottom ul li div.item ul li div.round{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f6af42;
+}
+#contact-us div.bottom ul li div.item ul li div.round div.imgcon{
+    width: 18px;
+    position: relative;
+    top: 16px;
+    left: 16px;
+}
+#contact-us div.bottom ul li div.item ul li div.round div.imgcon img{
+    width: 100%;
+    display: block;
+}
+#contact-us div.bottom ul li h5{
+    color: #719a29;
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 7px;
+}
+#contact-us div.bottom ul li span{
+    color: #454545;
+    font-weight: 500;
+}
+#contact-us div.bottom ul li div.itemlast{
+    
+}
+#contact-us div.bottom ul li div.itemlast ul{
+    
+}
+#contact-us div.bottom ul li div.itemlast ul li{
+    margin-right: 15px;
+}
+#contact-us div.bottom ul li div.itemlast ul li div.round{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f6af42;
+}
+#contact-us div.bottom ul li div.itemlast ul li div.round div.imgcon{
+    width: 18px;
+    position: relative;
+    top: 16px;
+    left: 16px;
+}
+#contact-us div.bottom ul li div.itemlast ul li div.round div.imgcon img{
+    width: 100%;
+    display: block;
+}
+#contact-us div.bottom ul li div.itemlast ul li h5{
+    
+}
+#contact-us div.bottom ul li div.itemlast ul li ul{
+    
+}
+#contact-us div.bottom ul li div.itemlast ul li div.social{
+   
+}
+#contact-us div.bottom ul li div.itemlast ul li div.social div.con{
+    display: flex;
+    width: 85px;
+}
+#contact-us div.bottom ul li div.itemlast ul li div.social div.con a{padding: 2px;}
+#contact-us div.bottom ul li div.itemlast ul li div.social div.con a img{
+    width: 100%;
+    display: block;
+}
+#contact-us div.enquiry{
+    margin-top: 30px;
+}
+#contact-us div.enquiry div.map{
+
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:600px;
+    height:400px;
+    border-radius: 20px;
+}
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    width:600px;
+    height:400px;
+}
+.gmap_iframe{
+    width:600px!important;
+    height:400px!important;
+    border-radius: 20px;
+}
+#contact-us div.enquiry{
+    display: flex;
+}
+#contact-us div.enquiry div.enquiry-form{
+    
+}
+#contact-us div.enquiry div.enquiry-form form{
+    
+}
+#contact-us div.enquiry div.enquiry-form form input{
+    padding: 15px 10px;
+    width: 581px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-left: 20px;
+}
+#contact-us div.enquiry div.enquiry-form form textarea{
+    width: 97%;
+    height: 106px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 38px;
+}
+#contact-us div.enquiry div.enquiry-form a.button{
+    padding: 15px 20px;
+    background: #f6af42;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 550;
+    margin-left: 20px;
+}
+#contact-us div.enquiry div.enquiry-form a.button:hover{
+    background: #fff;
+    color: #f6af42;
+    border: 1px solid #f6af42;
+} /* ( #contact-us ) */
+#blog{
+    padding: 20px 0 40px;
+}
+#blog section.wrapper{
+
+}
+#blog div.top{
+    text-align: center;
+}
+#blog div.top span{
+    font-size: 22px;
+    font-weight: 500;
+    color: #719a29;
+    text-transform: capitalize;
+}
+#blog div.top h3{
+    color: #454545;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 10px 0 36px;
+    text-transform: capitalize;
+}
+#blog div.bottom{
+    
+}
+#blog div.bottom ul{
+    display: flex;
+}
+#blog div.bottom ul li{
+    margin-right: 30px;
+}
+#blog div.bottom ul li div.blogcontent{
+    
+}
+#blog div.bottom ul li div.blogcontent div.imgcontainer{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#blog div.bottom ul li div.blogcontent div.imgcontainer img{
+    width: 100%;
+    display: block;
+}
+#blog div.bottom ul li div.blogcontent div.details{
+    background: #fff;
+    box-shadow: 0px 0px 29px 0px rgb(71 71 71 / 14%);
+    position: relative;
+    border-radius: 20px;
+    bottom: 61px;
+    left: 28px;
+    width: 90%;
+    padding: 40px;
+}
+#blog div.bottom ul li div.blogcontent div.details h5{
+    font-size: 22px;
+    font-weight: 700;
+    color: #454545;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+#blog div.bottom ul li div.blogcontent div.details ul{
+
+}
+#blog div.bottom ul li div.blogcontent div.details ul li{
+    display: flex;
+    justify-content: center;
+}
+#blog div.bottom ul li div.blogcontent div.details div.blogimgcon{
+    width: 18px;
+    margin-right: 7px;
+}
+#blog div.bottom ul li div.blogcontent div.details div.blogimgcon img{
+    width: 100%;
+    display: block;
+}
+#blog div.bottom ul li div.blogcontent div.details ul li span{
+    
+}
+#blog div.bottom ul li div.blogcontent p{
+    margin: 14px 0 26px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #919191;
+}
+#blog div.bottom ul li div.blogcontent a.button{
+    padding: 15px 20px;
+    background: #f6af42;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 550;
+}
+#blog div.bottom ul li div.blogcontent a.button:hover{
+    background: #fff;
+    color: #f6af42;
+    border: 1px solid #f6af42;
+    transition: .5s;
+} 
+#blog ul{
+    display: flex;
+    justify-content: center;
+}
+#blog ul li{
+    margin-right: 5px;
+}
+#blog ul li a.button{
+    padding: 8px 16px;
+    background: #fff;
+    color: #919191;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 550;
+    border: 1px solid #fbaf32;
+}
+#blog ul li a.button:hover{
+    background: #fbaf32;
+    color: #fff;
+    transition: 1s;
+}
+/* ( #blog ) */
+#article{
+    padding-top: 80px;
+}
+#article section.wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+#article div.left{
+    width: 70%;
+}
+#article div.left div.img-container{
+    width: 100%;
+}
+#article div.left div.img-container img{
+    width: 100%;
+    display: block;
+}
+#article div.left div.article-content{
+    margin-bottom: 60px;
+}
+#article div.left div.article-content h3{
+    margin: 16px 0 5px;
+    font-size: 30px;
+    font-weight: 700;
+}
+#article div.left div.article-content p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #8d8d8d;
+    margin-bottom: 7px;
+}
+#article div.left ul{
+    display: flex;
+}
+#article div.left ul li{
+    margin-right: 10px;
+}
+#article div.left ul li:last-child{
+    margin-right: 0;
+}
+#article div.left ul li a.button{
+    padding: 8px 14px;
+    border: 1px solid #8a8a8a;
+    color: #f6af42;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#article div.left div.author{
+    margin-top: 50px;
+    width: 100%;
+    padding: 35px;
+    background: #f5f5f5;
+    display: flex;
+}
+#article div.left div.author div.imgcon{
+    width: 24%;
+}
+#article div.left div.author div.imgcon img{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+#article div.left div.author div.author-detail{
+    margin-left: 20px;
+}
+#article div.left div.author div.author-detail h5{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#article div.left div.author div.author-detail p{
+    font-size: 16px;
+    font-weight: 550;
+    color: #8a8a8a;
+}
+#article div.left div.related-post{
+    margin-top: 20px;
+}
+#article div.left div.related-post div.post-head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#article div.left div.related-post div.post-head h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 542px;
+}
+#article div.left div.related-post div.post-head div.next{
+    width: 30px;
+    height: 30px;
+    background: #fbaf32;
+    margin-right: 8px;
+}
+#article div.left div.related-post div.post-head div.next:hover{
+    background: #587905;
+}
+#article div.left div.related-post div.post-head div.next div.imgcon{
+    width: 50%;
+}
+#article div.left div.related-post div.post-head div.next div.imgcon a{
+    
+}
+#article div.left div.related-post div.post-head div.next div.imgcon a img{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+#article div.left div.related-post ul{
+    margin-right: 80px;
+}
+#article div.left div.related-post ul li{
+    display: flex;
+}
+#article div.left div.related-post ul li div.img-con{
+    width: 88px;
+    margin-right: 20px;
+}
+#article div.left div.related-post ul li div.img-con img{
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+}
+#article div.left div.related-post ul li div.post{
+    
+}
+#article div.left div.related-post ul li div.post a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #8a8a8a;
+    margin-top: 5px;
+}
+#article div.left div.related-post ul li div.post p{
+    margin-top: 18px;
+    font-style: italic;
+    color: #989898;
+    text-transform: capitalize;
+}
+#article div.left div.related-post ul li div.post p span{
+    margin-top: 18px;
+    font-weight: bold;
+    color: #989898;
+    margin: 0 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+}
+#article div.left div.comments{
+    margin-top: 50px;
+}
+#article div.left div.comments h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#article div.left div.comments ul{
+   display: flex;
+   flex-direction: column;
+}
+#article div.left div.comments ul li{
+   margin-bottom: 30px;
+}
+#article div.left div.comments ul li div.user{
+    display: flex;
+}
+#article div.left div.comments ul li div.user div.imgcon{
+    width: 100px;
+}
+#article div.left div.comments ul li div.user div.imgcon img{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+#article div.left div.comments ul li div.user div.user-detail{
+    margin-left: 20px;
+}
+#article div.left div.comments ul li div.user div.user-detail h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fbaf32;
+    margin-bottom: 5px;
+}
+#article div.left div.comments ul li div.user div.user-detail span{
+    font-size: 16px;
+    color: #8a8a8a;
+}
+#article div.left div.comments ul li div.user div.user-detail p{
+    font-size: 18px;
+    color: #8a8a8a;
+    margin: 8px 0;
+}
+#article div.left div.comments ul li div.user div.user-detail a.button{
+    padding: 5px 10px;
+    background: #ddd;
+    color: #5d5d5d;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+#article div.left div.comments ul li div.user div.user-detail a.button:hover{
+    background: #fbaf32;
+}
+#article div.left div.comments ul li:last-child{
+   margin-bottom: 0;
+   margin-left: 5%;
+}
+#article div.left div.comment-box{
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+#article div.left div.comment-box h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#article div.left div.comment-box div.comment-form{
+    width: 100%;
+    background: #f3f6fe;
+    padding: 40px;
+}
+#article div.left div.comment-box div.comment-form form.fcomment{
+
+}
+#article div.left div.comment-box div.comment-form form.fcomment label{
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 8px;
+}
+#article div.left div.comment-box div.comment-form form.fcomment input,textarea{
+    border: 1px solid #9a9a9a;
+    background: #fff;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    width: 100%;
+    padding: 16px;
+}
+#article div.left div.comment-box div.comment-form a.button{
+    padding: 14px 20px;
+    background: #fbaf32;
+    color: #fff;
+    border-radius: 8px;
+}
+#article div.right{
+    margin-left: 40px;
+    width: 30%;
+}
+#article div.right form.search{
+    
+}
+#article div.right form.search input{
+    width: 100%;
+    padding: 14px;
+    background: #fff;
+    color: #8c9399;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #919191;
+}
+#article div.right form.search div.imgsearch{
+    width: 20px;
+}
+#article div.right form.search div.imgsearch img{
+    width: 100%;
+    display: block;
+    position: relative;
+    bottom: 34px;
+    left: 330px;
+    cursor: pointer;
+}
+#article div.right div.recent-posts{
+    margin: 30px 0;
+}
+#article div.right div.recent-posts h4{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+#article div.right div.recent-posts h4::after{
+    position: absolute;
+    content: "";
+    width: 71px;
+    height: 30px;
+    border-bottom: 2px solid #fbaf32;
+    left: 0;
+}
+#article div.right div.recent-posts ul{
+
+}
+#article div.right div.recent-posts ul li{
+    display: flex;
+    margin-bottom: 10px;
+}
+#article div.right div.recent-posts ul li div.img-con{
+    width: 88px;
+    margin-right: 20px;
+}
+#article div.right div.recent-posts ul li div.img-con img{
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+}
+#article div.right div.recent-posts ul li div.post{
+    
+}
+#article div.right div.recent-posts ul li div.post a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #8a8a8a;
+    margin-top: 5px;
+}
+#article div.right div.recent-posts ul li div.post p{
+    margin-top: 18px;
+    font-style: italic;
+    color: #989898;
+    text-transform: capitalize;
+}
+#article div.right div.recent-posts ul li div.post p span{
+    margin-top: 18px;
+    font-weight: bold;
+    color: #989898;
+    margin: 0 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+}
+#article div.right div.image-con{
+    width: 100%;
+    overflow: hidden;
+}
+#article div.right div.image-con a{
+    
+}
+#article div.right div.image-con a img{
+    width: 100%;
+    display: block;
+}
+#article div.right div.image-con:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+#article div.right div.category{
+    margin-top: 60px;
+}
+#article div.right div.category ul{
+    display: flex;
+}
+#article div.right div.category ul li{
+
+}
+#article div.right div.category ul li a.button{
+    padding: 10px 31px;
+    background: #f6af42;
+    color: #fff;
+}
+#article div.right div.category ul li a.button:hover{
+    background: #587905;
+}
+#article div.right div.categories{
+    margin-top: 40px;
+}
+#article div.right div.categories h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+#article div.right div.categories h3::after{
+    position: absolute;
+    content: "";
+    width: 71px;
+    height: 30px;
+    border-bottom: 2px solid #fbaf32;
+    left: 0;
+}
+#article div.right div.categories ul{
+    
+}
+#article div.right div.categories ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+#article div.right div.categories ul li a{
+    display: flex;
+    font-size: 16px;
+    color: #fbaf32;
+    font-weight: 550;
+}
+#article div.right div.categories ul li a:hover{
+    color: #587905;
+}
+#article div.right div.categories ul li a div.imgcon{
+    width: 12px;
+    margin-right: 8px;
+}   
+#article div.right div.categories ul li a div.imgcon img{
+    width: 100%;
+    display: block;
+}
+#article div.right div.categories ul li span{
+    font-size: 16px;
+    color: #919191;
+} 
+#article div.right div.cloud{
+    margin-top: 30px;
+}
+#article div.right div.cloud h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+}
+#article div.right div.cloud h3::after{
+    position: absolute;
+    content: "";
+    width: 71px;
+    height: 30px;
+    border-bottom: 2px solid #fbaf32;
+    left: 0;
+}
+#article div.right div.cloud ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#article div.right div.cloud ul li{
+    margin-right: 10px;
+    margin-bottom: 24px;
+}
+#article div.right div.cloud ul li a.button{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 14px;
+    border: 1px solid #8a8a8a;
+    color: #fbaf32;
+    border-radius: 8px;
+}
+#article div.right div.widge{
+    margin-top: 30px;
+}
+#article div.right div.widge h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+#article div.right div.widge h3::after{
+    position: absolute;
+    content: "";
+    width: 71px;
+    height: 30px;
+    border-bottom: 2px solid #fbaf32;
+    left: 0;
+}
+#article div.right div.widge p{
+    font-size: 16px;
+    color: #5d5d5d;
+}
+/* ( #article ) */
+#footer{
+    padding: 80px 0 60px;
+    background: #f5f5f5;
+}
+#footer section.wrapper{
+
+}
+#footer div.ftop{
+    display: flex;
+    justify-content: space-between;
+}
+#footer div.ftop div.address{
+    width: 33.33%;
+}
+/***************/
+#footer div.ftop h5{
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fbaf32;
+    padding-bottom: 12px;
+}
+#footer div.ftop h5::after
+{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #587905;
+    bottom: 0;
+    left: 0;
+}
+#footer div.ftop div.address h5{
+    font-size: 24px;
+    font-weight: 700;
+    color: #f6af42;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+#footer div.ftop div.address ul{
+
+}
+#footer div.ftop div.address ul li{
+    display: flex;
+    margin-bottom: 18px;
+}
+#footer div.ftop div.address ul li div.imgcon{
+    width: 18px;
+}
+#footer div.ftop div.address ul li div.imgcon img{
+    width: 100%;
+    display: block;
+}
+#footer div.ftop div.address ul li span{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #464646;
+}
+#footer div.ftop div.address ul li a{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#footer div.ftop div.address ul li div.icon-list{
+    margin-top: 20px;
+}
+#footer div.ftop div.address ul li div.icon-list div.round{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f6af42;
+    display: inline-block;
+    overflow: hidden;
+}
+#footer div.ftop div.address ul li div.icon-list div.round:hover{
+    background: #719a29;
+    transition: 1s;
+}
+#footer div.ftop div.address ul li div.icon-list div.round div.icon-con{
+    width: 20px;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+#footer div.ftop div.address ul li div.icon-list div.round div.icon-con a{
+    
+}
+#footer div.ftop div.address ul li div.icon-list div.round div.icon-con a img{
+    width: 100%;
+    display: block;
+}
+#footer div.ftop div.links{
+    width: 33.33%;
+}
+#footer div.ftop div.links h5{
+    font-size: 24px;
+    font-weight: 700;
+    color: #f6af42;
+    display: inline-block;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+#footer div.ftop div.links ul{
+    
+}
+#footer div.ftop div.links ul li{
+    display: flex;
+    margin-bottom: 10px;
+}
+#footer div.ftop div.links ul li div.icon-con{
+    width: 4%
+}
+#footer div.ftop div.links ul li div.icon-con a{
+   
+}
+#footer div.ftop div.links ul li div.icon-con a img{
+    width: 100%;
+    display: block;
+}
+#footer div.ftop div.links ul li a{
+   font-size: 18px;
+}
+#footer div.ftop div.newsletter{
+    width: 33.33%;
+}
+#footer div.ftop div.newsletter h5{
+    font-size: 24px;
+    font-weight: 700;
+    color: #f6af42;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+#footer div.ftop div.newsletter p{
+    font-size: 18px;
+    color: #464646;
+    margin-bottom: 20px;
+}
+#footer div.ftop div.newsletter form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #f6af42;
+    border-radius: 10px;
+}
+#footer div.ftop div.newsletter form input{
+    font-size: 16px;
+}
+#footer div.ftop div.newsletter form div.submit{
+
+}
+#footer div.ftop div.newsletter form div.submit input{
+    background: #f6af42;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 550;
+    padding: 8px;
+}
+#footer div.ftop div.newsletter form div.submit input:hover{
+    color: #f6af42;
+    border: 1px solid #f6af42;
+    background: #fff;
+    transition: 1s;
+}
+section.last{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 40px 0;
+}
+.last p{
+    font-size: 16px;
+    color: #464646;
+    font-weight: 550;
+}
+.last span{
+    font-size: 16px;
+    color: #f6af42;
+    font-weight: 550;
+    cursor: pointer;
+}
+.last span:hover{
+    color: #719a29;
+}
+/* ( #footer ) */
+/* ( index.html ) */
+
+@media all and (max-width: 1280px){
+    #about div.circle{
+        left: 362px;
+        top: 443px;
+    }
+    #about {
+        padding: 22px 0;
+    }
+    #features {
+        padding: 12px 0 80px;
+    }
+    #menu {
+        padding: 60px 0;
+    }
+    #team {
+        padding: 50px 0;
+    }
+    #menu div.bottom div.left div.item ul li:last-child {
+        margin-bottom: 10%;
+    }
+    #contact-us div.enquiry div.enquiry-form form input{
+        width: 320px;
+    }
+    #contact-us div.enquiry div.enquiry-form form textarea {
+        width: 320px;
+    }
+    #blog div.bottom ul li {
+        margin-right: 10px;
+    }
+    #article div.left {
+        width: 60%;
+    }
+    #article div.right {
+        width: 40%;
+    }
+    #article div.left ul {
+        flex-wrap: wrap;
+    }
+    #article div.left ul li{
+        margin-bottom: 30px;
+    }
+    #article div.left div.related-post div.post-head h3 {
+        margin-right: 300px;
+    }
+}
+@media all and (max-width: 1080px){
+    #home header h1 {
+        width: 216px;
+    }
+    #home-about section.spotlight div.spot h3 {
+        font-size: 54px;
+    }
+    #home-about header h1 a {
+        font-size: 38px;
+    }
+    #home-about header nav.right ul li {
+        margin-right: 14px;
+    }
+    #home header h1 a {
+        font-size: 34px;
+    }
+    #home header nav.right {
+        padding-top: 10px;
+    }
+    #home header nav.right ul li {
+        margin-right: 18px;
+    }
+    #home {
+        background-position: right 0px bottom -3px;
+    }
+    #booking div.left {
+        padding: 108px 20px;
+    }
+    #about div.right {
+        padding: 14px 0px;
+    }
+    #about div.right h3 {
+        font-size: 46px;
+    }
+    #features section.wrapper{
+        display: block;
+    }
+    #features div.left a.button {
+        margin-left: 26%;
+        width: 400px;
+    }
+    #features div.right {
+        padding-top: 20px;
+    }
+    #products ul li div.product a {
+        top: 16px;
+    }
+    #menu {
+        padding: 70px 0;
+    }
+    #menu div.right div.image-container {
+        width: 100%;
+    }
+    #team {
+        padding: 66px 0;
+    }
+    #contact-us div.enquiry {
+        flex-wrap: wrap;
+    }
+    #contact-us div.enquiry div.enquiry-form {
+        padding-top: 20px;
+    }
+    #contact-us div.enquiry div.enquiry-form form input {
+        width: 390px;
+    }
+    #contact-us div.enquiry div.enquiry-form form textarea {
+        width: 390px;
+    }
+    #contact-us div.enquiry div.enquiry-form form {
+        padding-left: 25%;
+    }
+    #contact-us div.enquiry div.enquiry-form a.button {
+        margin-left: 43%;
+    }
+    #contact-us div.bottom {
+        background: #f5f5f5;
+        padding: 34px 6px;
+    }
+    #contact-us div.bottom ul li div.item ul li div.round {
+        width: 44px;
+        height: 44px;
+    }
+    #contact-us div.bottom ul li div.itemlast ul li div.round {
+        width: 44px;
+        height: 44px;
+    }
+    #contact-us div.bottom ul li div.item ul li div.round div.imgcon {
+        top: 13px;
+        left: 13px;
+    }
+    #footer div.ftop div.newsletter {
+        width: 38%;
+    }
+    #footer div.ftop div.newsletter p {
+        font-size: 16px;
+    }
+    #footer div.ftop div.address ul li span {
+        font-size: 16px;
+    }
+    #footer div.ftop div.address ul li a {
+        font-size: 16px;
+    }
+    #footer div.ftop div.links ul li a {
+        font-size: 16px;
+    }
+    #blog div.bottom ul li {
+        margin-right: 24px;
+    }
+    #blog div.bottom ul li div.blogcontent div.imgcontainer {
+        width: 90%;
+    }
+    #blog div.bottom ul li div.blogcontent div.details {
+        width: 74%;
+    }
+    #blog div.bottom ul li div.blogcontent div.details ul li {
+        flex-wrap: wrap;
+    }
+    #blog div.bottom ul li div.blogcontent div.details ul li span {
+        font-size: 11px;
+    }
+    #article div.left div.article-content p {
+        font-size: 16px;
+    }
+    #article div.left div.comments ul li div.user div.user-detail p {
+        font-size: 16px;
+    }
+    #article div.left div.related-post div.post-head h3 {
+        margin-right: 230px;
+    }
+}
+@media all and (max-width: 980px){
+    #home header nav.right {
+        display: none;
+    }
+    #home-about header nav.right {
+        display: none;
+    }
+    #home section.spotlight div.spot {
+        padding-top: 118px;
+    }
+    #booking section.wrapper {
+        flex-wrap: wrap;
+    }
+    #booking div.left {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    #booking div.right {
+        width: 100%;
+    }
+    #about section.wrapper{
+        flex-wrap: wrap;
+    }
+    #about div.left div.img-container {
+        width: 692px;
+    }
+    #about div.circle {
+        left: 395px;
+        top: 489px;
+    }
+    #features div.left a.button {
+        margin-left: 19%;
+    }
+    #features {
+        padding: 60px 0 66px;
+    }
+    #products {
+        padding: 90px 0;
+    }
+    #products ul {
+        flex-wrap: wrap;
+    }
+    #products ul li div.product{
+        margin-bottom: 20px;
+    }
+    #menu div.bottom {
+        flex-wrap: wrap;
+    }
+    #menu div.bottom {
+        padding-left: 66px;
+    }
+    #menu div.bottom div.left div.item ul li:last-child {
+        margin-bottom: 4%;
+    }
+    #menu div.right div.image-container {
+        width: 74%;
+        margin: 0 auto;
+    }
+    #team {
+        padding: 16px 0;
+    }
+    #team div.bottom ul {
+        flex-wrap: wrap;
+    }
+    #team div.bottom ul li {
+        margin-bottom: 20px;
+        width: 48%;
+        margin-right: 20px;
+    }
+    #team div.bottom ul li:nth-child(2){
+        margin-right: 0;
+    }
+    #team div.bottom ul li:nth-child(4){
+        margin-right: 0;
+    }
+    #client {
+        padding-top: 92px;
+        padding-bottom: 30px;
+    }   
+    #client ul {
+        flex-wrap: wrap;
+    }
+    #client ul li div.details {
+        width: 100%;
+    }
+    #client ul li {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #client ul li div.details {
+        width: 100%;
+        padding: 47px 46px;
+    }
+    #client ul li:last-child {
+        margin-right: 0;
+    }
+    #client ul li {
+        margin-right: 10px;
+    }
+    #client ul li:last-child{
+        margin-right: 0;
+    }
+    #contact-us {
+        padding: 30px;
+    }
+    #contact-us div.top h4 {
+        font-size: 40px;
+    }
+    #contact-us div.bottom ul{
+        flex-wrap: wrap;
+    }
+    #contact-us div.bottom ul li div.item ul li {
+        margin-right: 10px;
+    }
+    #contact-us div.bottom ul li div.itemlast {
+        margin: 17px 224px;
+    }
+    #contact-us div.enquiry div.enquiry-form a.button {
+        margin-left: 56%;
+    }
+    #blog div.bottom ul li div.blogcontent div.details ul {
+        justify-content: flex-start;
+    }
+    #blog div.top h3 {
+        font-size: 36px;
+    }
+    #blog div.bottom ul {
+        flex-wrap: wrap;
+    }
+    #blog div.bottom ul li {
+        margin-right: 0;
+    }
+    #blog div.bottom ul li div.blogcontent div.imgcontainer {
+        width: 100%;
+    }
+    #blog div.bottom ul li div.blogcontent div.details {
+        width: 92%;
+    }
+    #blog div.bottom ul li {
+        margin-right: 14px;
+    }
+    #blog div.bottom ul li div.blogcontent div.details div.blogimgcon {
+        width: 18px;
+        margin-right: 8px;
+    }
+    #blog div.bottom ul li div.blogcontent div.details ul li span {
+        font-size: 18px;
+    }
+    #footer div.ftop{
+        flex-wrap: wrap;
+    }
+    #footer div.ftop div.address {
+        width: 70%;
+    }
+    #footer div.ftop div.links {
+        width: 30%;
+    }
+    #footer div.ftop div.newsletter {
+        width: 100%;
+        margin-top: 40px;
+    }
+    #article section.wrapper {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 40px;
+    }
+    #article div.left {
+        width: 100%;
+    }
+    #article div.right {
+        width: 100%;
+    }
+    #article div.left div.author {
+        margin-top: 8px;
+    }
+    #article div.left div.related-post {
+        margin-top: 38px;
+    }
+    #article div.left div.related-post div.post-head h3 {
+        margin-right: 57%;
+    }
+    #article div.left div.comment-box {
+        margin-bottom: 56px;
+    }    
+    #article div.right {
+        margin-left: 0;
+    }
+    #article div.right div.widge {
+        margin-bottom: 20px;
+    }
+    #article div.right form.search input {
+        width: 50%;
+    }
+    #article div.right form.search div.imgsearch img {
+        left: 276px;
+    }
+}
+@media all and (max-width: 768px){
+    #booking div.left h3 {
+        font-size: 38px;
+    }
+    #home-about section.spotlight div.spot h3 {
+        font-size: 50px;
+    }
+    #about div.left div.img-container {
+        width: 610px;
+    }
+    #about div.circle {
+        left: 362px;
+        top: 477px;
+    }
+    #about div.right {
+        padding: 28px 0px;
+    }
+    #about div.right h3 {
+        font-size: 40px;
+    }
+    #features div.left h3 {
+        text-transform: capitalize;
+        font-size: 38px;
+    }
+    #features div.left p{
+        margin-bottom: 30px;
+    }
+    #features div.left a.button {
+        margin-left: 12%;
+    }
+    #menu div.top h4 {
+        font-size: 38px;
+        margin: 19px 0 41px;
+    }
+    #menu div.bottom div.left div.item ul li div.imagecon {
+        width: 82px;
+    }
+    #menu div.bottom div.left div.item ul li:last-child {
+        margin-bottom: 10%;
+    }
+    #menu div.right {
+        display: none;
+    }
+    #team div.bottom ul li {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    #client ul li div.details {
+        width: 85%;
+        padding: 47px 46px;
+        margin: 0 auto;
+    }
+    #contact-us div.top h4 {
+        font-size: 38px;
+    }
+    #contact-us div.bottom ul{
+        display: block;
+    }
+    #contact-us div.bottom ul li div.itemlast {
+        display: block;
+        margin: 0;
+    }
+    #contact-us div.bottom ul li {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #contact-us div.bottom ul li div.item ul li div.round {
+        margin: 0 auto;
+    }
+    #contact-us div.bottom ul li div.itemlast ul li div.round {
+        margin: 0 auto;
+    }
+    #contact-us div.bottom ul li div.itemlast ul li div.social div.con {
+        width: 133px;
+        display: inline-flex;
+    }
+    #contact-us div.bottom ul li div.itemlast ul li div.social div.con a {
+        padding: 5px;
+    }
+    .gmap_canvas {
+        width: 523px;
+        height: 400px;
+        border-radius: 20px;
+    }
+    #contact-us div.enquiry div.enquiry-form form {
+        padding-left: 0%;
+    }
+    #contact-us div.enquiry div.enquiry-form form input {
+        width: 490px;
+    }
+    #contact-us div.enquiry div.enquiry-form form textarea {
+        width: 490px;
+    }
+    #contact-us div.enquiry div.enquiry-form a.button {
+        padding: 15px 182px;
+        margin-left: 22px;
+    }
+    #blog div.top h3 {
+        font-size: 32px;
+    }
+    #blog{
+        padding-bottom: 10px;
+    }
+    #footer {
+        padding: 50px 0 60px;
+    }
+    #footer div.ftop div.newsletter {
+        margin-top: 20px;
+    }
+    #footer div.ftop div.links ul li div.icon-con a img {
+        display: inline;
+    }
+    #home-about section.spotlight div.spot {
+        padding-top: 20px;
+    }
+    #home-about section.spotlight div.spot h3 {
+        font-size: 46px;
+    }
+    #article div.left div.related-post div.post-head h3 {
+        margin-right: 52%;
+    }
+    #article div.right div.cloud h3 {
+        margin-bottom: 30px;
+    }
+    #article div.left div.author div.imgcon {
+        width: 50%;
+    }
+    #article div.left div.comment-box div.comment-form form.fcomment label {
+        font-size: 16px;
+    }
+    #article div.right form.search input {
+        width: 100%;
+    }
+    #article div.right form.search div.imgsearch img {
+        left: 458px;
+    }
+    #footer div.ftop div.address ul li div.icon-list div.round div.icon-con {
+        left: 11px;
+        bottom: 13px;
+    }
+    #footer div.ftop div.address ul li span {
+        font-size: 18px;
+    }
+    #footer div.ftop div.address ul li a {
+        font-size: 18px;
+    }
+}
+@media all and (max-width: 640px){
+    #home-about section.spotlight div.spot p {
+        font-size: 16px;
+    }
+    #home-about section.spotlight div.spot h3 {
+        margin-bottom: 5px;
+        font-size: 28px;
+    }
+    #booking div.left h3 {
+        font-size: 36px;
+    }
+    #about {
+        padding: 0;
+    }
+    #about div.left div.img-container {
+        width: 425px;
+    }
+    #about div.circle {
+        left: 252px;
+        top: 366px;
+    }
+    #about div.right h3 {
+        font-size: 36px;
+    }
+    #features div.left a.button {
+        margin-left: 0;
+    }
+    #features div.right {
+        grid-template-columns: 1fr;
+    }
+    #features div.right div.ftr {
+        text-align: center;
+    }
+    #features {
+        padding: 60px 0 30px;
+    }
+    #products {
+        padding: 76px 0;
+    }
+    #products ul li div.product {
+        margin-bottom: 34px;
+    }
+    #menu {
+        padding-bottom: 30px;
+    }
+    #menu div.top h4 {
+        font-size: 34px;
+    }
+    #menu div.bottom {
+        padding-left: 10px;
+    }
+    #menu div.left div.item ul li {
+        margin-right: 7px;
+    }
+    #menu div.bottom div.left div.item ul li {
+        margin-right: 12px;
+    }
+    #menu div.bottom div.left div.item ul li h6 {
+        font-size: 18px;
+    }
+    #team div.bottom ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #team div.bottom ul li {
+        width: 80%;
+    }
+    #contact-us div.top h4 {
+        font-size: 32px;
+    }
+    #contact-us div.bottom ul li h5 {
+        font-size: 26px;
+    }
+    #contact-us div.bottom ul li span {
+        font-size: 20px;
+    }
+    .mapouter {
+        width: 390px;
+    }
+    .gmap_canvas {
+        width: 390px;
+        height: 387px;
+    }
+    #contact-us div.enquiry div.enquiry-form a.button {
+        padding: 14px 20px;
+    }
+    #contact-us div.enquiry div.enquiry-form form input {
+        width: 340px;
+    }
+    #contact-us div.enquiry div.enquiry-form form textarea {
+        width: 340px;
+    }
+    #blog div.bottom ul li div.blogcontent div.details {
+        width: 83%;
+    }
+    #blog div.bottom ul li div.blogcontent div.details ul {
+        flex-direction: column;
+    }
+    #blog div.bottom ul li div.blogcontent div.details ul li {
+        margin-bottom: 10px;
+    }
+    #footer div.ftop div.address {
+        width: 100%;
+    }
+    #footer div.ftop {
+        text-align: center;
+    }
+    #footer div.ftop div.newsletter p {
+        font-size: 16px;
+    }
+    #footer div.ftop div.address ul li a {
+        font-size: 18px;
+    }
+    #footer div.ftop div.address ul li span {
+        font-size: 18px;
+    }
+    #footer div.ftop div.links h5 {
+        text-align: center;
+    }
+    #footer div.ftop div.address ul li {
+        justify-content: center;
+    }
+    #footer div.ftop div.links {
+        width: 100%;
+    }
+    #footer div.ftop div.links ul li {
+        justify-content: center;
+    }
+    #footer div.ftop div.links ul li div.icon-con {
+       display: none;
+    }
+    #footer div.ftop div.links ul li a {
+        font-size: 20px;
+    }
+    .last p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    #article div.left div.article-content h3 {
+        font-size: 26px;
+    }
+    #article div.left div.article-content p {
+        margin-bottom: 14px;
+    }
+    #article div.left div.author {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #article div.left div.author div.author-detail {
+        text-align: center;
+    }
+    #article div.left div.author div.imgcon {
+        margin-bottom: 12px;
+    }
+    #article div.left div.related-post div.post-head div.next {
+        width: 26px;
+        height: 26px;
+    }
+    #article div.left div.related-post div.post-head h3 {
+        margin-right: 32%;
+        font-size: 28px;
+    }
+    #article div.left div.related-post ul li {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #article div.left div.related-post ul li div.post {
+        text-align: center;
+    }
+    #article div.left div.related-post ul li div.img-con {
+        margin-bottom: 14px;
+    }
+    #article div.right form.search div.imgsearch img {
+        left: 318px;
+    }
+    #article div.left div.comments h3 {
+        font-size: 28px;
+    }
+    #article div.left div.comments ul li div.user div.imgcon {
+        width: 200px;
+    }
+    #article div.left div.comments ul li div.user div.user-detail p {
+        font-size: 15px;
+    }
+    #article div.left div.comment-box h3 {
+        font-size: 26px;
+    }
+}
+@media all and (max-width: 480px){
+    #home {
+        background-position: right -234px bottom -8px;
+    }
+    #home-about header h1 a {
+        font-size: 24px;
+    }
+    #home-about{
+        background-position: right -427px bottom -3px;
+    }
+    #home-about section.spotlight div.spot h3 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    #home-about section.spotlight div.spot p {
+        font-size: 14px;
+    }
+    #home section.spotlight div.spot {
+        padding-top: 66px;
+    }
+    #booking div.left h3 {
+        font-size: 32px;
+    }
+    #booking div.left p {
+        font-size: 20px;
+    }
+    #about div.left div.img-container {
+        width: 320px;
+    }
+    #about div.circle div.image-play {
+        width: 30px;
+    }
+    #about div.circle div.image-play img {
+        left: 40px;
+        top: 33px;
+    }
+    #about div.circle {
+        left: 190px;
+        top: 320px;
+        width: 100px;
+        height: 100px;
+    }
+    #about div.right p {
+        font-size: 18px;
+    }
+    #features div.left a.button {
+        width: 290px;
+    }
+    #features div.left p {
+        font-size: 20px;
+    }
+    #features div.right {
+        padding-left: 0;
+    }
+    #features div.right div.ftr p {
+        font-size: 20px;
+    }
+    #products ul li div.product p {
+        font-size: 20px;
+    }
+    #products ul li div.product {
+        height: 434px;
+    }
+    #menu div.top span {
+        font-size: 28px;
+    }
+    #menu div.top ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #menu div.top ul li {
+        margin-bottom: 35px;
+    }
+    #menu div.bottom div.left div.item ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #menu div.bottom div.left div.item ul li h6::after{
+        display: none;
+    }
+    #menu div.bottom div.left div.item ul li h6 {
+        font-size: 20px;
+        text-align: center;
+    }
+    #menu div.bottom div.left div.item ul li p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .mapouter {
+        width: 300px;
+    }
+    .gmap_canvas {
+        width: 276px;
+        height: 387px;
+    }
+    .gmap_iframe {
+        width: 300px;
+    }
+    #client ul li div.details {
+        padding: 47px 26px;
+    }
+    #contact-us div.enquiry div.enquiry-form form input {
+        width: 240px;
+    }
+    #contact-us div.enquiry div.enquiry-form form textarea {
+        width: 240px;
+    }
+    #contact-us div.enquiry div.enquiry-form a.button {
+        margin-left: 52px;
+    }
+    #blog div.bottom ul li div.blogcontent div.details h5 {
+        font-size: 20px;
+    }
+    .last p {
+        font-size: 16px;
+    }
+    #article div.left div.article-content h3 {
+        font-size: 22px;
+    }
+    #article div.left div.related-post div.post-head h3 {
+        margin-right: 10px;
+        font-size: 27px;
+    }
+    #footer div.ftop div.links ul li a {
+        font-size: 18px;
+    }
+    #article {
+        padding-top: 56px;
+    }
+    #article div.right div.categories ul li a {
+        font-size: 18px;
+    }
+    #article div.right div.categories ul li span {
+        font-size: 18px;
+    }
+    #article div.right div.category ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #article div.right div.category ul li{
+        margin: 15px auto;
+    }
+    #article div.right form.search div.imgsearch img {
+        left: 216px;
+    }
+    #article div.right div.recent-posts ul li {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #article div.right div.recent-posts ul li div.post {
+        text-align: center;
+    }
+    #article div.right div.recent-posts ul li div.post p {
+        margin-top: 4px;
+    }
+    #article div.right div.recent-posts ul li div.img-con {
+        margin-bottom: 10px;
+    }
+    #article div.left div.comments ul li div.user {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #article div.left div.comments ul li div.user div.imgcon {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    #article div.left div.comments ul li div.user div.user-detail {
+        margin-left: 0;
+        text-align: center;
+    }
+    #article div.left div.comments h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    #article div.left div.comment-box div.comment-form form.fcomment input, textarea {
+        padding: 10px;
+    }
+    #article div.left div.related-post ul {
+        margin: 0 auto;
+    }
+}
+@media all and (max-width: 360px){
+    #home section.spotlight div.spot h3 {
+        font-size: 36px;
+    }
+    #home section.spotlight div.spot {
+        padding-top: 7px;
+    }
+    #home section.spotlight div.spot p {
+        font-size: 18px;
+    }
+    #booking div.left {
+        padding: 60px 20px;
+    }
+    #home section.spotlight div.spot ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #home section.spotlight div.spot ul li {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+    #home section.spotlight div.spot ul li:last-child{
+        margin-bottom: 0;
+    }
+    #booking div.left h3 {
+        font-size: 26px;
+    }
+    #home section.spotlight div.spot h3 span {
+        font-size: 36px;
+    }
+    div.spot h3 span {
+        font-size: 36px;
+    }
+    #booking div.left p {
+        font-size: 18px;
+    }
+    #about div.left div.img-container {
+        width: 284px;
+    }
+    #about div.circle div.image-play img {
+        left: 30px;
+        top: 23px;
+    }
+    #about div.circle {
+        left: 174px;
+        top: 276px;
+        width: 80px;
+        height: 80px;
+    }
+    #about div.right h3 {
+        font-size: 28px;
+    }
+    #about div.right p {
+       font-size: 16px;
+    }
+    #features div.left p {
+        font-size: 16px;
+    }
+    #features div.right div.ftr p {
+        font-size: 16px;
+    }
+    #contact-us div.bottom ul li h5 {
+        font-size: 18px;
+    }
+    #features div.left h3 {
+        font-size: 28px;
+    }
+    #features div.right div.ftr p {
+        font-size: 18px;
+    }
+    #products ul li div.product p {
+        font-size: 18px;
+    }
+    #menu div.top span {
+        font-size: 22px;
+    }
+    #menu div.top h4 {
+        font-size: 26px;
+    }
+    #menu div.top ul li div.burger a.button {
+        padding: 14px 28px;
+    }
+    #menu div.top ul li div.snacks a.button {
+        padding: 14px 28px;
+    }
+    #menu div.top ul li div.beverages a.button {
+        padding: 14px 16px;
+    }
+    #menu div.top ul li {
+        margin-right: 0;
+    }
+    #menu div.bottom div.left div.item ul li p {
+        font-size: 18px;
+    }
+    #team div.top h4 {
+        font-size: 28px;
+    }
+    #client ul li div.details p {
+        font-size: 14px;
+    }
+    #client ul li div.details h5 {
+        font-size: 20px;
+    }
+    #contact-us div.top h4 {
+        font-size: 24px;
+    }
+    .gmap_canvas {
+        width: 236px;
+        height: 298px;
+    }
+    .mapouter {
+        width: 210px;
+        height: 330px;
+    }
+    #contact-us div.enquiry div.enquiry-form form input {
+        width: 200px;
+    }
+    #contact-us div.enquiry div.enquiry-form form textarea {
+        width: 200px;
+    }
+    #contact-us div.enquiry div.enquiry-form a.button {
+        margin-left: 40px;
+    }
+    #blog div.top h3 {
+        font-size: 20px;
+    }
+    #footer div.ftop div.links h5 {
+        margin-bottom: 22px;
+    }
+    #blog div.bottom ul li div.blogcontent div.imgcontainer {
+        display: none;
+    }
+    #blog div.bottom ul li div.blogcontent div.details {
+        width: 100%;
+    }
+    #blog div.bottom ul li div.blogcontent div.details {
+        bottom: 0;
+        left: 14px;
+    }
+    #blog div.bottom ul li div.blogcontent {
+        margin-bottom: 30px;
+    }
+    #blog div.bottom ul li div.blogcontent a.button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    #blog div.bottom ul li div.blogcontent div.details ul li span {
+        font-size: 16px;
+    }
+    #footer div.ftop div.newsletter p {
+        font-size: 16px;
+    }
+    #footer div.ftop div.newsletter h5 {
+        margin-bottom: 26px;
+    }
+    #footer div.ftop div.links ul li a {
+        font-size: 18px;
+    }
+    .last p {
+        font-size: 14px;
+    }
+    .last span {
+        font-size: 14px;
+    }
+    #article div.left div.article-content p {
+        margin-bottom: 12px;
+    }
+    #article div.left div.author {
+        padding: 10px;
+    }
+    #article div.left div.author div.author-detail h5 {
+        font-size: 18px;
+    }
+    #article div.left div.author div.author-detail p {
+        font-size: 14px;
+    }
+    #article div.left div.related-post div.post-head div.next {
+        width: 20px;
+        height: 20px;
+    }
+    #article div.left div.related-post div.post-head div.next div.imgcon a img {
+        top: 5px;
+        left: 5px;
+    }
+    #article div.left div.related-post div.post-head h3 {
+        margin-right: 10px;
+        font-size: 22px;
+    }
+    #article div.left div.related-post ul li div.img-con {
+        width: 130px;
+    }
+    #article div.left div.comments ul li div.user div.user-detail p {
+        font-size: 14px;
+    }
+    #article div.left div.comment-box {
+        margin-top: 42px;
+    }
+    #article div.left div.comment-box h3 {
+        font-size: 20px;
+    }
+    #article div.left div.comment-box div.comment-form {
+        padding: 18px;
+    }
+    #article div.left div.comment-box div.comment-form a.button {
+        padding: 9px 20px;
+    }
+    #article div.right form.search div.imgsearch img {
+        left: 170px;
+    }
+}
+@media all and (max-width: 320px){
+    #footer div.ftop div.newsletter form div.submit input {
+        background: #f6af42;
+        color: #fff;
+        border-radius: 7px;
+        font-size: 16px;
+        font-weight: 550;
+        padding: 6px;
+    }
+}
